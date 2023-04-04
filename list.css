@@ -1,0 +1,28 @@
+.category {
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333333;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    padding-left: 25px;
+    background-image: url('https://dummyimage.com/10x10/000/fff');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    margin-bottom: 10px;
+  }
+  

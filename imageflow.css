@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+img {
+    height: 400px;
+    box-shadow: 5px 10px cyan;
+}
+.mtungi {
+    display: flex;margin: 100px;
+    height: 30%;width: 80%;
+}
+.card {
+    flex: 1;
+    overflow: hidden;
+}
+.card img {
+    object-fit: cover;
+    filter: drop-shadow(1);
+}
+.card:hover img{
+    filter: none;
+}

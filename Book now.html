@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Car Rental Availability Calendar</title>
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+  </head>
+  <body>
+	<nav>
+		<a href="mainpage.html">Home</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="car list.html">Inventory</a>
+        <a href="Book now.html">Book Now</a>
+		<a href="about.html">About Us</a>
+	</nav>
+	<form action="submit-form.php" method="post">
+		<h1>Reserve Your Car Today</h1><br>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		
+		<label for="phone">Phone Number:</label>
+ 		<input type="tel" id="phone" name="phone" placeholder="+254 123-456-789" required><br><br>
+		 <h2>Available Cars</h2>
+		 <p>Here is a list of the available cars in our <a href="car list.html">car inventory</a> and their prices:</p>
+		 <ul>
+			 <li>LUXURY: Ksh. 10,000 per day</li>
+			 <li>PICK-UPS: Ksh.6,000 per day</li>
+			 <li>KADUDU'S: Ksh. 3,500 per day</li>
+			 <li>MINIVANS: Ksh 7,000 per day</li>
+			 <li>LUXURY SUVS: Ksh 12,000 per day</li>
+			 <li>UTILITY: Ksh 4,000 per day</li>
+			 <li>MINI SUVS: Ksh 8,000 per day</li>
+			 <li>SEDANS: Ksh 4,500 per day</li>
+		 </ul>
+		 <p>ALL OUR CARS ARE IN MINT AND PRESTINE CONDITION!</p>
+		 <h1>Car Rental Availability Calendar</h1>
+    <label for="pickup-date">Pickup Date:</label>
+    <input type="date" id="pickup-date" name="pickup-date">
+    <label for="return-date">Return Date:</label>
+    <input type="date" id="return-date" name="return-date">
+    <script src="calendar.js"></script><br><br>
+		
+		<label for="car">Car:</label>
+		<select id="car" name="car">
+			<option value="">Choose a type</option>
+		<option value="Lancruiser TX">Luxury SUV - Lancruiser TX</option>
+		<option value="Range Rover Vogue">Luxury SUV - Range Rover Vogue</option>
+		<option value="Nissan Patrol">Luxury SUV - Nissan Patrol</option>
+		<option value="Mercedes S550">Luxury - Mercedes S550</option>
+		<option value="Jaguar Xj">Luxury - Jaguar Xj</option>
+		<option value="Mercedes S600">Luxury - Mercedes S600</option>
+		<option value="Toyota Hilux">Pick-ups - Toyota Hilux</option>
+		<option value="Isuzu D-MAX">Pick-ups - Isuzu D-MAX</option>
+		<option value="Nissan Navara">Pick-ups - Nissan Navara</option>
+		<option value="Ford Ranger">Pick-ups - Ford Ranger</option>
+		<option value="Toyota RAV4">Mini SUV - Toyota RAV4</option>
+		<option value="Honda CRV">Mini SUV - Honda CRV</option>
+		<option value="Toyota Vanguard">Mini SUV - Toyota Vanguard</option>
+		<option value="Mazda CX5">Mini SUV - Mazda CX5</option>
+		<option value="Toyota Vitz">KADUDU'S - Toyota Vitz</option>
+		<option value="Honda fit">KADUDU'S - Honda fit</option>
+		<option value="Nissan Note">KADUDU'S - Nissan Note</option>
+		<option value="Mazda Demio">KADUDU'S - Mazda Demio</option>
+		<option value="Toyota Ist">KADUDU'S - Toyota Ist</option>
+		<option value="Toyota Voxy">Mini-Vans - Toyota Voxy</option>
+		<option value="Toyota Noah">Mini-Vans - Toyota Noah</option>
+		<option value="Nissan Serena">Mini-Vans - Nissan Serena</option>
+		<option value="Toyota Corolla">Sedans - Toyota Corolla</option>
+		<option value="Toyota Axio">Sedans - Toyota Axio</option>
+		<option value="Toyota Premio">Sedans - Toyota Premio</option>
+		<option value="Nissan Tiida">Sedans - Nissan Tiida</option>
+		<option value="Mitsubishi Lancer">Sedans - Mitsubishi Lancer</option>
+		<option value="Toyota probox">Utility - Toyota probox</option>
+		<option value="Toyota succeed">Utility - Toyota succeed</option>
+		</select><br><br>
+		
+		<label for="payment-method">Payment Method:</label>
+  		<select id="payment-method" name="payment-method">
+   		<option value="M-PESA">M-PESA</option>
+    		<option value="PAYPAL">PAYPAL</option>
+   		<option value="CARD">CARD</option>
+  		</select><br><br>
+
+		  <label for="pickup_location">Pickup Location:</label>
+		  <input type="text" id="pickup_location" name="pickup_location" required>
+		  
+		  <label for="return_location">Return Location:</label>
+		  <input type="text" id="return_location" name="return_location" required><br><br>
+
+		  <label for="extras">Extras:</label>
+    <ul id="extras">
+      <li>
+        <input type="checkbox" id="gps" name="gps">
+        <label for="gps">GPS</label>
+      </li>
+      <li>
+        <input type="checkbox" id="child_seat" name="child_seat">
+        <label for="child_seat">Child Seat</label>
+      </li>
+      <li>
+        <input type="checkbox" id="insurance" name="insurance">
+        <label for="insurance">Insurance</label>
+      </li>
+    </ul>
+	<div id="booking_summary">
+		<h3>Booking Summary</h3>
+		<p>Please review your rental details and total cost before confirming your reservation.</p>
+	  </div>
+
+ 		<input type="submit" value="Reserve">
+		<br><br><br>
+	
+<fieldset>
+	<h2>DO YOU HAVE A VALID KENYAN INSURANCE?</h2>
+<h2>Temporary Insurance Booking</h2>
+<form action="submit-form.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+
+		<label for="phone">Phone Number:</label>
+ 		<input type="tel" id="phone" name="phone" placeholder="+254 123-456-789" required><br><br>
+
+		<label for="Preferred Insurance Company">Preferred Insurance Company:</label>
+		<select id="Preferred Insurance Company" name="Preferred Insurance Company">
+		<option value="Britam Insurance">Britam Insurance</option>
+		<option value="CIC Insurance">CIC Insurance</option>
+		<option value="Madison Insurance">Madison Insurance</option>
+		<option value="Heritage Insurance ">Heritage Insurance</option>
+		<option value="APA Insurance">APA Insurance</option>
+		<option value="ICEA Lion General Insurance">ICEA Lion General Insurance</option>
+		</select><br><br>
+
+		<label for="vehicle">Vehicle:</label>
+		<select id="vehicle" name="vehicle">
+		<option value="">Choose car type</option>
+		<option value="Lancruiser TX">Luxury SUV - Lancruiser TX</option>
+		<option value="Range Rover Vogue">Luxury SUV - Range Rover Vogue</option>
+		<option value="Nissan Patrol">Luxury SUV - Nissan Patrol</option>
+		<option value="Mercedes S550">Luxury - Mercedes S550</option>
+		<option value="Jaguar Xj">Luxury - Jaguar Xj</option>
+		<option value="Mercedes S600">Luxury - Mercedes S600</option>
+		<option value="Toyota Hilux">Pick-ups - Toyota Hilux</option>
+		<option value="Isuzu D-MAX">Pick-ups - Isuzu D-MAX</option>
+		<option value="Nissan Navara">Pick-ups - Nissan Navara</option>
+		<option value="Ford Ranger">Pick-ups - Ford Ranger</option>
+		<option value="Toyota RAV4">Mini SUV - Toyota RAV4</option>
+		<option value="Honda CRV">Mini SUV - Honda CRV</option>
+		<option value="Toyota Vanguard">Mini SUV - Toyota Vanguard</option>
+		<option value="Mazda CX5">Mini SUV - Mazda CX5</option>
+		<option value="Toyota Vitz">KADUDU'S - Toyota Vitz</option>
+		<option value="Honda fit">KADUDU'S - Honda fit</option>
+		<option value="Nissan Note">KADUDU'S - Nissan Note</option>
+		<option value="Mazda Demio">KADUDU'S - Mazda Demio</option>
+		<option value="Toyota Ist">KADUDU'S - Toyota Ist</option>
+		<option value="Toyota Voxy">Mini-Vans - Toyota Voxy</option>
+		<option value="Toyota Noah">Mini-Vans - Toyota Noah</option>
+		<option value="Nissan Serena">Mini-Vans - Nissan Serena</option>
+		<option value="Toyota Corolla">Sedans - Toyota Corolla</option>
+		<option value="Toyota Axio">Sedans - Toyota Axio</option>
+		<option value="Toyota Premio">Sedans - Toyota Premio</option>
+		<option value="Nissan Tiida">Sedans - Nissan Tiida</option>
+		<option value="Mitsubishi Lancer">Sedans - Mitsubishi Lancer</option>
+		<option value="Toyota probox">Utility - Toyota probox</option>
+		<option value="Toyota succeed">Utility - Toyota succeed</option>
+		</select><br><br>
+		<label for="pickup">INSURE FROM:Pickup date:</label>
+		<input type="date" id="pickup" name="pickup"><br><br>
+		<label for="return">INSURE TO:Return date:</label>
+		<input type="date" id="return" name="return"><br><br>
+		<input type="submit" value="Insure Now">
+	</fieldset>
+	<p>If you have any questions or concerns, please <a href="contact us.html">contact us</a>.</p>
+	</form>
+	</form>
+	<footer>
+		<div class="footer-container">
+		  <div class="footer-info">
+			<p>Location: Waiyaki Way, Nairobi</p>
+			<p>Phone: +254 791 420 655</p>
+			<p>Email: info@barakacarrentals.com</p>
+		  </div>
+		</div>
+		<div class="footer-bottom">
+		  <p>&copy; 2023 Baraka Car Rentals. All Rights Reserved.</p>
+		</div>
+	  </footer>
+	
+  </body>
+</html>
